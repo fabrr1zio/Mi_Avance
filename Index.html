@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1> Carrito de compras</h1>
+    </header>
+
+    <main class="container">
+
+    <section class="products">
+            <h2>Productos</h2>
+
+ <div class="product">
+    <h3>Audífonos</h3>
+    <p>S / 150</p>
+
+    <button onclick="agregar('Audífonos' , 150)">Agregar</button>
+ </div>
+
+<div class="product">
+    <h3>Smartphone</h3>
+    <p>S / 1200</p>
+     <button onclick="agregar('Smartphone' , 1200)">Agregar</button>
+</div>
+
+<div class="product">
+    <h3>Tablet</h3>
+    <p>S / 900</p>
+     <button onclick="agregar('Tablet' , 900)">Agregar</button>
+</div>
+
+    </section>
+
+
+    <section class="cart">
+        <h2>Carrito</h2>
+
+        <ul id="lista"></ul>
+
+<p> Total sin descuento: S/ <span id="subtotal">0</span></p>
+<p>Descuento: <span id="descuento">0%</span></p>
+<h3>Total fianl: S/ <span id="total">0</span></h3>
+
+<input type="text" id="cupon" placeholder="Código descuento">
+<button onclick="aplicarCupon()">Aplicar cupón</button>
+
+<br><br>
+<button onclick="vaciar()">Vaciar Carrito</button>
+
+    </section>
+
+</main>
+
+
+    <script src="Script.js"></script>
+</body>
+</html>
